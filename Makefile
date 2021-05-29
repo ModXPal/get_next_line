@@ -8,7 +8,7 @@ NAME		= get_next_line
 
 CC			= gcc
 
-CFLAGS		= -Wall -Wextra -Werror -Iincludes
+CFLAGS		= -Wall -Wextra -Werror -Iincludes -D BUFFER_SIZE=42
 
 RM			= rm -rf
 

@@ -1,0 +1,4 @@
+Test premiere ligne 1@\n # 1234567891011121314151617181920212223242526272829303132 
+    TEST seconde ligne !!!!\t \0
+ ""test TROISIEME LIGNE \0 ()('''
+ ''test QuAtRiEme ligne [] {} \\ ?/
