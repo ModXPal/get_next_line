@@ -6,7 +6,7 @@
 /*   By: rcollas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 12:10:33 by rcollas           #+#    #+#             */
-/*   Updated: 2021/05/29 16:51:39 by rcollas          ###   ########.fr       */
+/*   Updated: 2021/05/31 12:23:43 by rcollas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,6 @@ unsigned int	ft_strlen(char *str)
 	while (str[i])
 		i++;
 	return (i);
-}
-
-int	ft_end_of_line(char *str)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (str[i])
-		if (str[i++] == '\n')
-			return (i);
-	return (0);
 }
 
 char	*ft_strjoin(char *s1, char *s2)
@@ -83,24 +72,13 @@ char	*ft_substr(char *str, unsigned int len)
 	return (truncate_str);
 }
 
-void	ft_after_newline(char *str, unsigned int start)
-{
-	char			*tmp;
-	unsigned int	i;
-
-	tmp = str;
-	i = 0;
-	while (tmp[start])
-		str[i++] = tmp[start++];
-	str[i] = 0;
-}
-
-void	ft_bzero(void *s)
+int	ft_bzero(void *s)
 {
 	if (!s)
-		return ;
+		return (0);
 	while (*(unsigned char *)s)
 		*(unsigned char *)(s++) = 0;
+	return (0);
 }
 
 char	*ft_strdup(char *s)
