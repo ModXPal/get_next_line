@@ -6,11 +6,11 @@
 /*   By: rcollas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 12:10:33 by rcollas           #+#    #+#             */
-/*   Updated: 2021/06/03 14:25:25 by rcollas          ###   ########.fr       */
+/*   Updated: 2021/06/03 14:25:41 by rcollas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 unsigned int	ft_strlen(char *str)
 {
@@ -45,7 +45,6 @@ char	*ft_strjoin(char *s1, char *s2)
 		str[i++] = *s2++;
 	str[i] = 0;
 	free(s1);
-	s1 = NULL;
 	return (str);
 }
 
@@ -70,7 +69,6 @@ char	*ft_substr(char *str, unsigned int len)
 	}
 	truncate_str[i] = 0;
 	free(str);
-	str = NULL;
 	return (truncate_str);
 }
 
